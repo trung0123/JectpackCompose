@@ -70,6 +70,23 @@ sealed class Answer<T : PossibleAnswer> {
     data class Slider(val answerValue: Float) : Answer<PossibleAnswer.Slider>()
 }
 
+/**
+ * Add or remove an answer from the list of selected answers depending on whether the answer was
+ * selected or deselected.
+ */
+fun Answer.MultipleChoice.withAnswerSelected(
+    @StringRes answer: Int,
+    selected: Boolean
+): Answer.MultipleChoice {
+    val newStringRes = answersStringRes.toMutableSet()
+    if (!selected) {
+        newStringRes.remove(answer)
+    } else {
+        newStringRes.add(answer)
+    }
+    return Answer.MultipleChoice(newStringRes)
+}
+
 
 
 
