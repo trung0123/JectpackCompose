@@ -85,6 +85,14 @@ fun Answer.MultipleChoice.withAnswerSelected(
         newStringRes.add(answer)
     }
     return Answer.MultipleChoice(newStringRes)
+
+
+
+
+
+
+
+
 }
 
 
