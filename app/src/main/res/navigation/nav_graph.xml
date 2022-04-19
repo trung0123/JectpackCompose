@@ -16,4 +16,8 @@
         android:id="@+id/sign_in_fragment"
         android:name="com.example.testcompose.signinsignup.SignInFragment"
         android:label="Sign in" />
+    <fragment
+        android:id="@+id/survey_fragment"
+        android:name="com.example.testcompose.survey.SurveyFragment"
+        android:label="Survey" />
 </navigation>
