@@ -53,7 +53,7 @@ class SurveyFragment : Fragment() {
                                 onBackPressed = {
                                     activity?.onBackPressedDispatcher?.onBackPressed()
                                 },
-                                openSetting = {
+                                openSettings = {
                                     activity?.startActivity(
                                         Intent(
                                             Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
